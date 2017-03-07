@@ -1,0 +1,12 @@
+<h1>Here is all you need to do !</h1>
+
+<ul>
+<% @tasks.each do |task|  %>
+<li> <%= link_to task.name, "tasks/#{task.id}"  %> </li>
+<% end  %>
+</ul>
+
+<%= link_to "add a new task", "tasks/new" %>
+
+<%= link_to "edit a task", "tasks/:id/edit" %>
+
